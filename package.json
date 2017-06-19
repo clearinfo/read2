@@ -2,7 +2,7 @@
   "name": "xwords",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/aifly/xwords.git",
+  "repository": {},
   "author": "fly",
   "license": "MIT",
   "scripts": {

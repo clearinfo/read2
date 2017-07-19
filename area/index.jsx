@@ -13,6 +13,8 @@ class ZmitiAreaListApp extends Component {
 			dialogtext:'',
 			dialogdes:'',
 			dialogtip:'',
+			dialogkey:'',
+			dialogparentkey:'',
 			dataCode:[{
 				key:1,
 				name:'黑龙江大厦',
@@ -66,7 +68,7 @@ class ZmitiAreaListApp extends Component {
 			},{
 				key:11,
 				name:'四川大厦',
-				code:7525,
+				code:86032,
 				imgurl:'./assets/images/code11.png',
 			},{
 				key:12,
@@ -185,11 +187,13 @@ class ZmitiAreaListApp extends Component {
 				imgurl:'./assets/images/code33.png',
 			},{
 				key:35,
+				parentkey:24,
 				name:'内蒙古大厦—呼和浩特大厦',
 				code:84012,
 				imgurl:'./assets/images/code35.png',
 			},{
 				key:36,
+				parentkey:11,
 				name:'四川大厦—成都大厦',
 				code:7525,
 				imgurl:'./assets/images/code36.png',
@@ -256,9 +260,13 @@ class ZmitiAreaListApp extends Component {
 				<div className="zmiti-area-dialog" style={{display:this.state.display}}>
 					<div className="zmiti-area-close"><span onTouchTap={this.dialogClose.bind(this)}>×</span></div>
 					<div className="zmiti-area-dialog-inner">
+						
+						
 						<div className="zmiti-area-dialog-tit">地区：{this.state.dialogname}</div>
-						<img className="zmiti-area-dialog-imgs" src={this.state.dialogimgurl}/>
-						<div className="zmiti-area-dialog-code">验证码：{this.state.dialogcode}</div>
+						<div className="zmiti-area-dialog-tabscon">
+							<img className="zmiti-area-dialog-imgs" src={this.state.dialogimgurl}/>
+							<div className="zmiti-area-dialog-code">验证码：{this.state.dialogcode}</div>
+						</div>
 						<div className="zmiti-area-dialog-tips">提示：</div>
 						<div className="zmiti-area-dialog-text">
 							<ol>
@@ -289,7 +297,7 @@ class ZmitiAreaListApp extends Component {
 	}
 	provinceDialog(value){
 		var s = this;
-		var name,text,des,imgurl,code,tip;
+		var name,text,des,imgurl,code,tip,key,parentkey;
 		//console.log(value);
 		var dataCode=this.state.dataCode;
 		$.each(dataCode,function(i,item){
@@ -300,6 +308,8 @@ class ZmitiAreaListApp extends Component {
 				des=item.des;
 				code=item.code;
 				tip=item.tip;
+				parentkey=item.parentkey;
+				key=item.key;
 			}
 		})
 		this.setState({
@@ -309,6 +319,8 @@ class ZmitiAreaListApp extends Component {
 			dialogtip:tip,
 			dialogimgurl:imgurl,
 			dialogcode:code,
+			dialogkey:key,
+			dialogparentkey:parentkey,
 			display:'block',
 		})
 		s.forceUpdate();
@@ -323,6 +335,9 @@ class ZmitiAreaListApp extends Component {
 			dialogtext:'',
 			dialogdes:'',
 			dialogtip:'',
+			dialogkey:'',
+			dialogparentkey:'',
+
 		})
 	}
 	openlink(){

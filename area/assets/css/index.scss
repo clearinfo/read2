@@ -138,7 +138,6 @@ $viewW:640px;
       font-size:30px;
       line-height:1;
       color:#ffffff;
-      margin-top: 50px;
       margin-bottom: 50px;
     }
     .zmiti-area-dialog-imgs{
@@ -195,3 +194,11 @@ $viewW:640px;
       background:url('../images/read_btn02.png') no-repeat;
     }
   }
+.zmiti-area-dialog-tabsmenu{
+  color:#ffffff;
+  line-height: 3;
+  text-align: center;
+  span{
+    margin:0 20px;
+  }
+}

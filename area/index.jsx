@@ -12,210 +12,187 @@ class ZmitiAreaListApp extends Component {
 			dialogimgurl:'',
 			dialogtext:'',
 			dialogdes:'',
+			dialogtip:'',
 			dataCode:[{
 				key:1,
 				name:'黑龙江大厦',
 				code:90909,
 				imgurl:'./assets/images/code1.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:2,
 				name:'吉林大厦',
 				code:3131,
 				imgurl:'./assets/images/code2.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:3,
 				name:'辽宁大厦',
 				code:82012,
 				imgurl:'./assets/images/code3.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:4,
 				name:'河北大厦',
 				code:82072,
 				imgurl:'./assets/images/code4.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:5,
 				name:'河南大厦',
 				code:86042,
 				imgurl:'./assets/images/code5.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:6,
 				name:'山东大厦',
 				code:84022,
 				imgurl:'./assets/images/code6.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:7,
 				name:'江苏大厦',
 				code:83052,
 				imgurl:'./assets/images/code7.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:8,
 				name:'山西大厦',
 				code:82202,
 				imgurl:'./assets/images/code8.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:9,
 				name:'陕西大厦',
 				code:86022,
 				imgurl:'./assets/images/code9.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:10,
 				name:'甘肃大厦',
 				code:86102,
 				imgurl:'./assets/images/code10.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:11,
 				name:'四川大厦',
-				code:86032,
+				code:7525,
 				imgurl:'./assets/images/code11.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:12,
 				name:'青海大厦',
 				code:82032,
 				imgurl:'./assets/images/code12.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:13,
 				name:'湖南大厦',
 				code:86112,
 				imgurl:'./assets/images/code13.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:14,
 				name:'湖北大厦',
 				code:81082,
 				imgurl:'./assets/images/code14.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:15,
 				name:'江西大厦',
 				code:83202,
 				imgurl:'./assets/images/code15.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:16,
 				name:'安徽大厦',
 				code:83142,
 				imgurl:'./assets/images/code16.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:17,
 				name:'浙江大厦',
 				code:83072,
 				imgurl:'./assets/images/code17.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:18,
 				name:'福建大厦',
 				code:83192,
 				imgurl:'./assets/images/code18.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:19,
 				name:'广东大厦',
 				code:86142,
 				imgurl:'./assets/images/code19.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:20,
 				name:'港澳台大厦',
 				code:85062,
 				imgurl:'./assets/images/code33.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:21,
 				name:'贵州大厦',
 				code:86062,
 				imgurl:'./assets/images/code21.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:22,
 				name:'云南大厦',
 				code:86082,
 				imgurl:'./assets/images/code22.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:23,
 				name:'海南大厦',
 				code:80032,
 				imgurl:'./assets/images/code23.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:24,
 				name:'内蒙古大厦',
 				code:81212,
 				imgurl:'./assets/images/code24.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:25,
 				name:'新疆大厦',
 				code:1421,
 				imgurl:'./assets/images/code25.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:26,
 				name:'宁夏大厦',
 				code:84062,
 				imgurl:'./assets/images/code26.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:27,
 				name:'西藏大厦',
 				code:4323,
 				imgurl:'./assets/images/code27.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:28,
 				name:'广西大厦',
 				code:81182,
 				imgurl:'./assets/images/code28.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:29,
 				name:'北京大厦',
 				code:81011,
 				imgurl:'./assets/images/code29.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:30,
 				name:'天津大厦',
 				code:81062,
 				imgurl:'./assets/images/code30.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:31,
 				name:'上海大厦',
 				code:81072,
 				imgurl:'./assets/images/code31.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:32,
 				name:'重庆大厦',
 				code:81142,
 				imgurl:'./assets/images/code32.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:33,
 				name:'港澳台大厦',
 				code:85062,
 				imgurl:'./assets/images/code33.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
 			},{
 				key:34,
 				name:'港澳台大厦',
 				code:85062,
 				imgurl:'./assets/images/code33.png',
-				text:'1.长按图片识别二维码，添加机器人小管家为好友',des:'2.发送以上验证码给小管家，即可被邀请入群',
+			},{
+				key:35,
+				name:'内蒙古大厦—呼和浩特大厦',
+				code:84012,
+				imgurl:'./assets/images/code35.png',
+			},{
+				key:36,
+				name:'四川大厦—成都大厦',
+				code:7525,
+				imgurl:'./assets/images/code36.png',
 			}],
 		};
 		this.viewW = document.documentElement.clientWidth;
@@ -237,6 +214,7 @@ class ZmitiAreaListApp extends Component {
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,4)}>河北大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,8)}>山西大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,24)}>内蒙古大厦</a></li>
+							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,35)}>呼和浩特大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,3)}>辽宁大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,2)}>吉林大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,1)}>黑龙江大厦</a></li>
@@ -255,6 +233,7 @@ class ZmitiAreaListApp extends Component {
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,23)}>海南大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,32)}>重庆大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,11)}>四川大厦</a></li>
+							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,36)}>成都大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,21)}>贵州大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,22)}>云南大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,27)}>西藏大厦</a></li>							
@@ -282,8 +261,11 @@ class ZmitiAreaListApp extends Component {
 						<div className="zmiti-area-dialog-code">验证码：{this.state.dialogcode}</div>
 						<div className="zmiti-area-dialog-tips">提示：</div>
 						<div className="zmiti-area-dialog-text">
-							<div>{this.state.dialogtext}</div>
-							<div>{this.state.dialogdes}</div>
+							<ol>
+								<li>长按图片识别二维码，添加机器人小管家为好友</li>
+								<li>发送以上验证码给小管家，即可被邀请入群</li>
+								<li>如识别二维码失败，请添加微信号：ReadToLead 并发送阅读群名。</li>
+							</ol>
 						</div>
 					</div>
 					
@@ -307,7 +289,7 @@ class ZmitiAreaListApp extends Component {
 	}
 	provinceDialog(value){
 		var s = this;
-		var name,text,des,imgurl,code;
+		var name,text,des,imgurl,code,tip;
 		//console.log(value);
 		var dataCode=this.state.dataCode;
 		$.each(dataCode,function(i,item){
@@ -317,12 +299,14 @@ class ZmitiAreaListApp extends Component {
 				text=item.text;
 				des=item.des;
 				code=item.code;
+				tip=item.tip;
 			}
 		})
 		this.setState({
 			dialogname:name,
 			dialogtext:text,
 			dialogdes:des,
+			dialogtip:tip,
 			dialogimgurl:imgurl,
 			dialogcode:code,
 			display:'block',
@@ -338,6 +322,7 @@ class ZmitiAreaListApp extends Component {
 			dialogimgurl:'',
 			dialogtext:'',
 			dialogdes:'',
+			dialogtip:'',
 		})
 	}
 	openlink(){

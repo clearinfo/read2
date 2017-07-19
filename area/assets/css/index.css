@@ -138,6 +138,11 @@
     color: #ffffff;
     font-size: 20px;
     line-height: 2; }
+    .zmiti-area-dialog .zmiti-area-dialog-text ol {
+      padding-left: 10px; }
+      .zmiti-area-dialog .zmiti-area-dialog-text ol li {
+        margin-left: 20px;
+        list-style-type: decimal; }
   .zmiti-area-dialog .zmiti-area-dialog-code {
     color: #ffffff;
     text-align: center;

@@ -7,6 +7,9 @@ class ZmitiAreaListApp extends Component {
 		super(props);
 		this.state={
 			display:'none',
+			active:'none',
+			activea:'none',
+			provicetip:'none',
 			dialogname:'',
 			dialogcode:0,
 			dialogimgurl:'',
@@ -218,7 +221,6 @@ class ZmitiAreaListApp extends Component {
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,4)}>河北大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,8)}>山西大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,24)}>内蒙古大厦</a></li>
-							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,35)}>呼和浩特大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,3)}>辽宁大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,2)}>吉林大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,1)}>黑龙江大厦</a></li>
@@ -237,7 +239,6 @@ class ZmitiAreaListApp extends Component {
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,23)}>海南大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,32)}>重庆大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,11)}>四川大厦</a></li>
-							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,36)}>成都大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,21)}>贵州大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,22)}>云南大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,27)}>西藏大厦</a></li>							
@@ -256,16 +257,25 @@ class ZmitiAreaListApp extends Component {
 						</ul>
 						
 					</div>
-				</div>				
+				</div>
+
 				<div className="zmiti-area-dialog" style={{display:this.state.display}}>
 					<div className="zmiti-area-close"><span onTouchTap={this.dialogClose.bind(this)}>×</span></div>
 					<div className="zmiti-area-dialog-inner">
-						
-						
 						<div className="zmiti-area-dialog-tit">地区：{this.state.dialogname}</div>
+
+						<div className="zmiti-area-dialog-tabsmenu" style={{display:this.state.active}}>
+							<span onTouchTap={this.provinceDialog.bind(this,24)}>全省群</span>|<span onTouchTap={this.provinceDialog.bind(this,35)}>省会群</span>
+						</div>
+
+						<div className="zmiti-area-dialog-tabsmenu" style={{display:this.state.activea}}>
+							<span onTouchTap={this.provinceDialog.bind(this,11)}>全省群</span>|<span onTouchTap={this.provinceDialog.bind(this,36)}>省会群</span>
+						</div>
+
 						<div className="zmiti-area-dialog-tabscon">
 							<img className="zmiti-area-dialog-imgs" src={this.state.dialogimgurl}/>
 							<div className="zmiti-area-dialog-code">验证码：{this.state.dialogcode}</div>
+							<div className="zmiti-area-dialog-code" style={{display:this.state.provicetip}}>请择一加入，不得重复入群</div>
 						</div>
 						<div className="zmiti-area-dialog-tips">提示：</div>
 						<div className="zmiti-area-dialog-text">
@@ -275,11 +285,13 @@ class ZmitiAreaListApp extends Component {
 								<li>如识别二维码失败，请添加微信号：ReadToLead 并发送阅读群名。</li>
 							</ol>
 						</div>
-					</div>
-					
+					</div>					
 				</div>
-			</div>
 
+
+
+
+			</div>
 		);
 	}
 
@@ -323,12 +335,26 @@ class ZmitiAreaListApp extends Component {
 			dialogparentkey:parentkey,
 			display:'block',
 		})
+		if(value===24){
+			this.setState({
+				active:'block',
+				provicetip:'block',
+			})
+		}else if(value===11){
+			this.setState({
+				activea:'block',
+				provicetip:'block',
+			})
+		}
 		s.forceUpdate();
 	}
 	dialogClose(){
 		var s=this;
 		s.setState({
 			display:'none',
+			active:'none',
+			activea:'none',
+			provicetip:'none',
 			dialogname:'',
 			dialogcode:0,
 			dialogimgurl:'',

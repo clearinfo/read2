@@ -250,10 +250,8 @@ class ZmitiAreaListApp extends Component {
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,33)}>香港大厦</a></li>							
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,34)}>澳门大厦</a></li>
 							<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,20)}>台湾大厦</a></li>
-							<li className="zmiti-area-text02"><em>*</em>若不能顺利入驻，请点击下方入口进行报名。</li>
-							<li className="zmiti-area-btn02">								
-								<button onTouchTap={this.openlink.bind(this)}>报名入口</button>
-							</li>
+							<li className="zmiti-area-text02"><div><em>*</em>如不能顺利入驻，请添加微信号：ReadToLead，</div><div>并发送阅读大厦名称，即可加入</div></li>
+							
 						</ul>
 						
 					</div>

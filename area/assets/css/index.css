@@ -76,7 +76,8 @@
         border: none;
         font-size: 24px;
         margin-left: -12px;
-        color: #0da3f9; }
+        color: #0da3f9;
+        padding-right: 30px; }
         .zmiti-area-main-ui .zmiti-area-prolist .zmiti-area-province li.zmiti-area-text02 em {
           font-style: normal;
           color: red;

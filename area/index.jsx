@@ -279,9 +279,10 @@ class ZmitiAreaListApp extends Component {
 						<div className="zmiti-area-dialog-text">
 							<ol>
 								<li>长按图片识别二维码，添加机器人小管家为好友</li>
-								<li>发送以上验证码给小管家，即可被邀请入群</li>
-								<li>如识别二维码失败，请添加微信号：ReadToLead 并发送阅读群名。</li>
+                    			<li>发送以上验证码给小管家，即可被邀请入群</li>								
 							</ol>
+							<p><b>注：</b>如识别二维码失败，请添加微信号：ReadToLead 并发送您要加入的阅读群名称。
+                			</p>
 						</div>
 					</div>					
 				</div>

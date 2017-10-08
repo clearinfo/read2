@@ -130,7 +130,7 @@
     margin: 0 auto;
     display: block; }
   .zmiti-area-dialog .zmiti-area-dialog-tips {
-    color: #ffffff;
+    color: #cc0000;
     font-size: 20px;
     line-height: 2;
     margin-top: 50px; }
@@ -143,6 +143,9 @@
       .zmiti-area-dialog .zmiti-area-dialog-text ol li {
         margin-left: 20px;
         list-style-type: decimal; }
+    .zmiti-area-dialog .zmiti-area-dialog-text p b {
+      font-weight: normal;
+      color: #0da3f9; }
   .zmiti-area-dialog .zmiti-area-dialog-code {
     color: #ffffff;
     text-align: center;

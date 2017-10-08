@@ -148,7 +148,7 @@ $viewW:640px;
       display:block;
     }
     .zmiti-area-dialog-tips{
-      color:#ffffff;
+      color:#cc0000;
       font-size:20px;
       line-height:2;
 
@@ -163,6 +163,12 @@ $viewW:640px;
         li{
           margin-left:20px;
           list-style-type: decimal;
+        }
+      }
+      p{
+        b{
+          font-weight: normal;
+          color: #0da3f9;
         }
       }
     }
